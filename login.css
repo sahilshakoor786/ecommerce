@@ -1,0 +1,28 @@
+#main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+#glogin{
+    margin: 4%;
+    margin-bottom: 7%
+}
+#lgin{
+    font-size: 2rem;
+    font-family: sans;
+    font-weight: bolder
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid black;
+    padding: 4%;
+    background-image: linear-gradient(70deg,rgb(17,17,17) 10%,white)
+}

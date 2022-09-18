@@ -1,0 +1,4 @@
+<% var as = item.description.split("a") %>
+    <% as.forEach(item=>{ %>
+        <div> <%= item %> </div>
+        <% })%>

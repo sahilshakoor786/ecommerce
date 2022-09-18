@@ -1,0 +1,253 @@
+<div id="bar">
+ 
+    <input type="text" placeholder="Search...." id="search">
+    <i class="fas fa-search" id="sico"></i>
+    <i class="fas fa-user-circle" id="user" style="font-size: 20px;color:white"></i>
+    <i class="fas fa-shopping-basket" id="user" style="font-size: 20px;color:white"></i>
+    
+    </div><style>
+
+#nav{
+    width: 100%;
+  background-color: black;
+  height: 10%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: grid;
+  grid-template-columns: 49% 1% 50%;
+  grid-auto-rows: 100%;
+  grid-gap: 8px;
+  text-align:center
+}
+#user{
+  align-self: center
+  
+}
+
+#nav::before{
+position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+}
+.navanimation,#nav::before{
+    animation:navani 10s ease-in infinite
+}
+@keyframes navani{
+  0%{
+    background-color: cyan
+  }
+  30%{
+    background-color: green
+  }
+  60%{
+    background-color: yellow 
+  }
+  90%{
+    background-color: red
+  }
+  100%{
+    background-color: indigo
+  }
+}
+#title{
+  color: white;
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.3rem;
+ padding: 1%;
+justify-self: end;
+  align-self: center
+}
+body{
+  overflow-x: hidden;
+}
+#search{
+  justify-self: left;
+  align-self:center;
+  padding-left: 13px;
+  width: 85%;
+  background: 0;
+  border:0;
+  color: white;
+  background-color:rgba(500,424,626,.2)
+}
+#navimg{
+  width: calc(5% + 1%);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  justify-self: center;
+  align-self: center
+}
+#user:hover,#sico:hover{
+  color:darkgrey !important; 
+  transform: scale(1.1)
+}
+#user,#sico{
+    transition: transform .8s ease-in
+}
+#bar{
+  display: grid;
+  right: 0;
+  grid-template-columns:33% 8% 8% 8%;
+  justify-content: end;
+  padding-right: 4%
+}
+#sico{
+  font-size: 18px;
+  color: white;
+  align-self: center;
+  justify-self: left
+}
+#offer{
+  width: 97%;
+  height: 100%;
+  background-color: black;
+  border-radius: 10px;
+  justify-self: center
+  
+}
+#ass{
+  display: grid;
+   left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  margin-top: 5%;
+  height: 40%;
+ grid-auto-columns: 100%;
+  grid-auto-rows: 100%;
+  
+}
+#sdiv{
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  margin-top: 24.5%;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  grid-auto-rows: 89%;
+  justify-content: center;
+  grid-gap: 3.5%;
+  align-content: center
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+ border-radius: 25px
+}
+::-webkit-scrollbar{
+ width: 8px
+}
+::-webkit-scrollbar-track{
+  background-color: grey
+}
+#sdivitem{
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row ;
+}
+#pname{
+border-bottom:2px solid white;
+  height: 20%;
+  z-index: 2000;
+  width:100%
+}
+#sdivitem:hover{
+transform: scale(1.03);
+}
+body{
+  background-image: linear-gradient(139deg,white,grey 80%)
+}
+#bars{
+font-size: 20px;
+  color:white;
+  left: 0;
+  position: absolute;
+  top: 0;
+  margin: 1.5%
+}
+#bars:hover{
+color: grey;
+}
+#sdivitem{
+  transition: transform 1s ease-in
+}
+#login{
+  border-radius: 25px;
+  width:70%;
+  align-self: center;  
+  justify-self: center;
+  color:white ;
+  background-image: linear-gradient(rgb(7,58,349),rgb(7,58,570));
+  border:0
+}
+*{
+  scrollbar-color: black grey;
+  scrollbar-width:7px
+}
+#foot{
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: -70%;
+  background-color: black
+}
+#sidebar{
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  top: 0;
+  position: absolute;
+  left: 0;
+  z-index: 200;
+  margin: 0;
+  margin-top:4.5%;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden
+ 
+}
+#offerimg{
+ width: 100%;
+  height: 100%;
+  border-radius:10px ;
+  /*animation : im 1s forwards*/
+}
+@keyframes im {
+  0%{
+    
+    opacity: 0%
+  }
+  100%{
+    opacity: 100%
+    
+  }
+
+}
+#sideitem{
+  width: 98%;
+  height: 3%;
+  border-top: 2px solid grey;
+  color: white;
+font-style: monospace;
+  padding-left: 7px;
+  padding-top: 1%;
+  
+}
+#sideitem:hover{
+  background-color: grey
+  
+}
+    </style>
